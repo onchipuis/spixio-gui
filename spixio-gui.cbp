@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="spixio-gui" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/spixio-gui" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/spixio-gui" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="$( pkg-config --cflags gtk+-3.0 ) -rdynamic" />
+		</Compiler>
+		<Linker>
+			<Add option="-lMPSSE -lftd2xx -ldl" />
+			<Add option="$( pkg-config --libs gtk+-3.0 )" />
+			<Add option="-rdynamic" />
+			<Add directory="../spixio-gui" />
+		</Linker>
+		<Unit filename="WinTypes.h" />
+		<Unit filename="ftd2xx.h" />
+		<Unit filename="libMPSSE_spi.h" />
+		<Unit filename="spixio-gtk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spixio-gtk.h" />
+		<Unit filename="spixio-gui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spixio-gui.h" />
+		<Unit filename="spixio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spixio.h" />
+		<Unit filename="stdafx.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
