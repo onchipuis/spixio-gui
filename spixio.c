@@ -219,7 +219,7 @@ int spi_init(void)
 			status = SPI_GetChannelInfo (i,&devList);
 			APP_CHECK_STATUS(status);
 
-			if(devList.Flags == 0x2 && devList.Type == 0x8 && devList.ID == 0x4036001)
+			if(/*devList.Flags == 0x2 && devList.Type == 0x8 && */devList.ID == 0x4036014)
 			{
 				dev_to_open = i;
 				break;

@@ -2782,3 +2782,35 @@
 
 1467273662 /usr/include/gtk-3.0/gtk/gtk-autocleanups.h
 
+1476401849 source:/home/hector/UIS/PHD/TESTING/spixio-gui/spixio-gtk.c
+	"stdafx.h"
+	"spixio-gtk.h"
+	"spixio-gui.h"
+	"spixio.h"
+
+1476401849 /home/hector/UIS/PHD/TESTING/spixio-gui/stdafx.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<inttypes.h>
+	<gtk/gtk.h>
+	<math.h>
+	<Windows.h>
+	<WinNT.h>
+	<Shlobj.h>
+	<tchar.h>
+	<direct.h>
+	<dlfcn.h>
+
+1476401849 /home/hector/UIS/PHD/TESTING/spixio-gui/spixio-gtk.h
+
+1476401849 /home/hector/UIS/PHD/TESTING/spixio-gui/spixio-gui.h
+
+1476401849 /home/hector/UIS/PHD/TESTING/spixio-gui/spixio.h
+
+1476401849 source:/home/hector/UIS/PHD/TESTING/spixio-gui/spixio-gui.c
+	"stdafx.h"
+	"spixio.h"
+	"spixio-gui.h"
+	"spixio-gtk.h"
+
